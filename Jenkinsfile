@@ -6,7 +6,7 @@ pipeline {
             steps {
                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/mayurikore/terraform-project.git']])
         }
-    
+        }
         // stage ("terraform init") {
         //     steps {
         //         sh ("terraform init -reconfigure") 
